@@ -1,0 +1,27 @@
+quarkus:
+  cache:
+    caffeine:
+      "get-sanitized-html":
+        initial-capacity: 100
+        maximum-size: 100
+        expire-after-write: 90S
+
+      "get-sanitized-html-blocking":
+        initial-capacity: 100
+        maximum-size: 100
+        expire-after-write: 30S
+
+      "get-sanitized-html-fornonblocking":
+        initial-capacity: 100
+        maximum-size: 100
+        expire-after-write: 30S
+
+      "get-sanitized-html-async":
+        initial-capacity: 100
+        maximum-size: 100
+        expire-after-write: 30S
+
+      "get-sanitized-html-uni":
+        initial-capacity: 100
+        maximum-size: 100
+        expire-after-write: 30S
